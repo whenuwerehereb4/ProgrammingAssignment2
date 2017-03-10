@@ -1,6 +1,10 @@
-## This script consists of 2 functions work in tandem to: 1) compute the inverse of a matrix; and 2) store that result in the cache, so that it will not need to be re-computed each time the object needs to be accessed (assuming the contents are unchanging).
+## This script consists of 2 functions work in tandem to: 1) compute
+#the inverse of a matrix; and 2) store that result in the cache, so
+#that it will not need to be re-computed each time the object needs
+#to be accessed (assuming the contents are unchanging).
 
-## This function creates a matrix object (orig_matrix) and stores the calculated inverse of that matrix (inverse_matrix)
+## This function creates a matrix object (orig_matrix) and stores the
+# calculated inverse of that matrix (inverse_matrix)
 
 makeCacheMatrix <- function(orig_matrix = matrix()) {
         inverse_matrix <- NULL
@@ -17,7 +21,8 @@ makeCacheMatrix <- function(orig_matrix = matrix()) {
 }
 
 
-## This function serves to retrieve the inverse of the cached matrix (orig_matrix) that is stored in the makematrix() object's environment
+## This function serves to retrieve the inverse of the cached matrix
+# (orig_matrix) that is stored in the makematrix() object's environment
 
 cacheSolve <- function(orig_matrix, ...) {
         ## Return a matrix that is the inverse of 'orig_matrix'
@@ -32,7 +37,8 @@ cacheSolve <- function(orig_matrix, ...) {
         inverse_matrix
 }
 
-## SOME TEST CODE USED TO CONFIRM MY FUNCTIONS WORKED AFTER RUNNING THE ABOVE
+## SOME TEST CODE USED TO CONFIRM MY FUNCTIONS WORKED AFTER RUNNING THE
+# ABOVE
 ## WILL WANT TO REMOVE # ON EACH LINE TO RUN :) 
 
 #m<-matrix(c(2,4,3,1,5,7,3,4,2),nrow=3,ncol=3,byrow=TRUE)
